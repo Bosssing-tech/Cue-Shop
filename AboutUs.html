@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        /* Shared Styles */
+        .developer-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            margin-top: 50px;
+        }
+
+        .developer-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: 90%;
+        }
+
+        /* Shared Image Styling */
+        .developer-card img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 5px solid #000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Developer 1 Specific Styling */
+        .developer-card1 img {
+            border-color: #000000;
+            margin-top: 50%;
+            margin-left: 300%;
+        }
+
+        .developer-card1 h3 {
+            font-size: 72px;
+            color: #18a099;
+            margin-top: 3%;
+            margin-left: 2%;
+        }
+
+        .developer-card1 p {
+            font-size: 22px;
+            color: #ffffff;
+            margin-top: 6%;
+        }
+
+        /* Developer 2 Specific Styling */
+        .developer-card2 img {
+            border-color: hsl(0, 0%, 0%);
+            margin-top: 10%;
+            margin-left: 300%;
+        }
+
+        .developer-card2 h3 {
+            font-size: 72px;
+            color: #14a6e0;
+            margin-top: 22%;
+            margin-left: 2%;
+        }
+
+        .developer-card2 p {
+            font-size: 22px;
+            color: #fcfcfc;
+            margin-top: 24%;
+        }
+
+        /* Responsive Design for Smaller Screens */
+        @media (max-width: 768px) {
+            .developer-container {
+                gap: 30px;
+                margin-top: 30px;
+            }
+
+            .developer-card img {
+                width: 250px;
+                height: 250px;
+            }
+
+            .developer-card1 h3,
+            .developer-card2 h3 {
+                font-size: 60px;
+            }
+
+            .developer-card1 p,
+            .developer-card2 p {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .developer-card img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .developer-card1 h3,
+            .developer-card2 h3 {
+                font-size: 40px;
+            }
+
+            .developer-card1 p,
+            .developer-card2 p {
+                font-size: 16px;
+                text-align: justify;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Image/CUEEE.png" alt="Logo">
+        </div>
+        <div class="hamburger-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Product.html">Product</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="side-menu">
+        <a href="index.html">Home</a>
+        <a href="Product.html">Product</a>
+        <a href="AboutUs.html">About Us</a>
+    </div>
+
+    <div class="developer-container">
+        <div class="developer-card developer-card1">
+            <img src="Image/DEVELOPER1.jpg" alt="Developer 1">
+            <h3>Jan Melvin R Mayrina</h3>
+            <p>"Hi, I'm one of the developers of this website. We have put in a lot of effort to ensure that the site is not only functional but also user-friendly and visually appealing. We kindly appreciate your visit and hope you enjoy exploring all the features we have worked hard to create. Your feedback is highly valued as we continue to improve and grow!"</p>
+        </div>
+        <div class="developer-card developer-card2">
+            <img src="Image/DEVELOPER2.jpg" alt="Developer 2">
+            <h3>Penelope Opiniano</h3>
+            <p>"Hello, I’m one of the developers behind this website. We’ve worked hard to build a platform that is both easy to navigate and visually engaging. We truly appreciate your time here and hope you find the content and features helpful. Your input is important to us as we strive to make continuous improvements and enhance your experience!"</p>
+        </div>
+    </div>
+
+    
+    <footer class="footer">
+        <div class="align-left">
+            <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+        </div>
+        <div class="align-center">
+            <img src="Image/CUEEE.png" alt="Cue logo">
+        </div>
+        <div class="align-right social-icons">
+            <a href="https://www.instagram.com/fck_mlvn/profilecard/?igsh=MXN0bXcxY2phOHpqOA==" target="_blank">
+                <img src="Image/IG.png" alt="Instagram Logo" class="social-icon">
+            </a>
+            <a href="https://www.facebook.com/janmelvin.mayrina?mibextid=ZbWKwL" target="_blank">
+                <img src="Image/FB.png" alt="Facebook Logo" class="social-icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="Image/Twitter.png" alt="Twitter Logo" class="social-icon">
+            </a>
+        </div>
+    </footer>
+    
+
+    <script>
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const sideMenu = document.querySelector('.side-menu');
+
+        hamburgerMenu.addEventListener('click', () => {
+            sideMenu.classList.toggle('show');
+        });
+    </script>
+
+
+</body>
+</html>
